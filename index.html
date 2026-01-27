@@ -1,60 +1,158 @@
-<!doctype html>
-<html lang="uk">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
   <title>Andrii Maslo | CV</title>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:900px;margin:48px auto;padding:0 16px;line-height:1.6}
-    header{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
-    h1{margin:0;font-size:34px}
-    .muted{color:#555}
-    a{color:inherit}
-    section{margin-top:28px}
-    .tag{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:4px 10px;margin:4px 6px 0 0}
-    ul{padding-left:18px}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS файл -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div>
-      <h1>Andrii Maslo</h1>
-      <div class="muted">Researcher AI | Intern · Sofia BG, Student | SU, Sofia BG · UvA, Amsterdam </div>
-      <div class="muted">
-        <a href="mailto:you@email.com">maslo.andrii@proton.me</a> ·
-        <a href="https://www.linkedin.com/in/andrii-maslo-63b852265/">LinkedIn</a> ·
-        <a href="https://github.com/quebecCyb">GitHub</a>
+
+<div class="resume-wrapper">
+
+  <!-- PROFILE -->
+  <section class="profile section-padding">
+    <div class="container">
+
+      <div class="picture-resume-wrapper">
+        <div class="picture-resume">
+          <span>
+            <img src="ava.jpg" alt="Profile photo">
+          </span>
+
+          <svg viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  
+                          0 1 0 0 0  
+                          0 0 1 0 0  
+                          0 0 0 21 -9"
+                  result="cm"/>
+              </filter>
+            </defs>
+
+            <g filter="url(#goo)">
+              <circle class="st0" cx="171.5" cy="175.6" r="130"/>
+              <circle class="bubble0 st1" cx="171.5" cy="175.6" r="122.7"/>
+              <circle class="bubble1 st1" cx="171.5" cy="175.6" r="122.7"/>
+              <circle class="bubble2 st1" cx="171.5" cy="175.6" r="122.7"/>
+              <circle class="bubble3 st1" cx="171.5" cy="175.6" r="122.7"/>
+              <circle class="bubble4 st1" cx="171.5" cy="175.6" r="122.7"/>
+              <circle class="bubble5 st1" cx="171.5" cy="175.6" r="122.7"/>
+              <circle class="bubble6 st1" cx="171.5" cy="175.6" r="122.7"/>
+              <circle class="bubble7 st1" cx="171.5" cy="175.6" r="122.7"/>
+              <circle class="bubble8 st1" cx="171.5" cy="175.6" r="122.7"/>
+              <circle class="bubble9 st1" cx="171.5" cy="175.6" r="122.7"/>
+              <circle class="bubble10 st1" cx="171.5" cy="175.6" r="122.7"/>
+            </g>
+          </svg>
+        </div>
+        <div class="clearfix"></div>
       </div>
+
+      <div class="name-wrapper">
+        <h1>Andrii <br> Maslo</h1>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="contact-info clearfix">
+        <ul class="list-titles">
+          <li>Call</li>
+          <li>Mail</li>
+          <li>Web</li>
+          <li>Home</li>
+        </ul>
+        <ul class="list-content">
+          <li>+359-877-392-803</li>
+          <li>maslo.andrii.ox@proton.me</li>
+          <li><a href="#">quebecCyb.github.io</a></li>
+          <li>Sofia, Bulgaria</li>
+        </ul>
+      </div>
+
+      <div class="contact-presentation">
+        <p>
+          <span class="bold">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus euismod congue nisi, nec consequat quam.
+        </p>
+      </div>
+
+      <div class="contact-social clearfix">
+        <ul class="list-titles">
+          <li>Twitter</li>
+          <li>Dribbble</li>
+          <li>Codepen</li>
+        </ul>
+        <ul class="list-content">
+          <li><a href="#">@janderson</a></li>
+          <li><a href="#">janderson</a></li>
+          <li><a href="#">janderson</a></li>
+        </ul>
+      </div>
+
     </div>
-  </header>
+  </section>
 
-  <section>
-    <h2>About</h2>
-    <p>Data Science researcher and .NET Developer with 3 years of commercial development
-experience in a startup environment and over 1 year of applied research experience
-at the GATE Institute of Big Data. Currently in my 4th year of a B.A. in Data Analysis
-at Sofia University. My background combines software engineering (.NET, big data
-systems, market analytics) with academic research in NLP and deep learning, including
-peer-reviewed publications authored independently. Strong interest in computer vision,
-with motivation to further expand expertise through a Data Science position.</p>
-    <div>
-      <span class="tag">Python</span><span class="tag">Data</span><span class="tag">Research</span>
+  <!-- EXPERIENCE -->
+  <section class="experience section-padding">
+    <div class="container">
+
+      <h3 class="experience-title">Experience</h3>
+
+      <div class="experience-wrapper">
+
+        <div class="company-wrapper clearfix">
+          <div class="experience-title">Company name</div>
+          <div class="time">Nov 2012 – Present</div>
+        </div>
+
+        <div class="job-wrapper clearfix">
+          <div class="experience-title">Front End Developer</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="company-wrapper clearfix">
+          <div class="experience-title">Company name</div>
+          <div class="time">Nov 2010 – Nov 2012</div>
+        </div>
+
+        <div class="job-wrapper clearfix">
+          <div class="experience-title">Freelance Web Developer</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+      </div>
+
+      <div class="section-wrapper clearfix">
+        <h3 class="section-title">Skills</h3>
+        <ul>
+          <li class="skill-percentage">HTML / HTML5</li>
+          <li class="skill-percentage">CSS / CSS3</li>
+          <li class="skill-percentage">JavaScript</li>
+          <li class="skill-percentage">jQuery</li>
+          <li class="skill-percentage">WordPress</li>
+          <li class="skill-percentage">Photoshop</li>
+        </ul>
+      </div>
+
+      <div class="section-wrapper clearfix">
+        <h3 class="section-title">Hobbies</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
     </div>
   </section>
 
+  <div class="clearfix"></div>
+</div>
 
-  <section>
-    <h2>Experience</h2>
-    <ul>
-      <li><b>GATE AI</b> — Research Intern (2024-2026).</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li><b>University</b> — Degree (Year)</li>
-    </ul>
-  </section>
 </body>
 </html>
