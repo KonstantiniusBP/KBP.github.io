@@ -3,179 +3,313 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kostiantyn Fridman | CV</title>
+  <title>CV - Kostiantyn Fridman - Node.js Backend Developer</title>
   <style>
+    :root {
+      --text: #151515;
+      --muted: #595f69;
+      --line: #d8dde4;
+      --accent: #0b6b45;
+      --soft: #f5f7f6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
+      background: #ffffff;
+      color: var(--text);
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      color: #111;
-      line-height: 1.6;
+      line-height: 1.45;
     }
+
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 32px 28px 44px;
+    }
+
     header {
-      background-color: #f8f9fa;
-      padding: 20px 20px;
-      text-align: center;
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 18px;
+      margin-bottom: 22px;
     }
-    header h1 {
+
+    h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 38px;
+      line-height: 1.1;
+      letter-spacing: 0;
     }
-    header p {
-      font-size: 1.1em;
-      color: #555;
+
+    .role {
+      margin: 8px 0 14px;
+      color: var(--accent);
+      font-size: 20px;
+      font-weight: 700;
     }
-    nav {
-      background-color: #111 /* #343a40 */;
+
+    .contacts {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      gap: 8px 18px;
+      color: var(--muted);
+      font-size: 14px;
     }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      padding: 15px 20px;
-      display: inline-block;
-    }
-    nav a:hover {
-      background-color: #495057;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      color: #222;
-      border-bottom: 2px solid #dee2e6;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
-    .project, .publication, .award {
-      margin-bottom: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #f8f9fa;
-      color: #555;
-    }
-    a.cv-link {
-      color: #007bff;
+
+    a {
+      color: #0a5d8f;
       text-decoration: none;
     }
-    a.cv-link:hover {
+
+    a:hover {
       text-decoration: underline;
+    }
+
+    section {
+      margin-top: 26px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--line);
+      color: #222;
+      font-size: 21px;
+    }
+
+    h3 {
+      margin: 18px 0 6px;
+      font-size: 17px;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 21px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .summary {
+      padding: 16px 18px;
+      background: var(--soft);
+      border-left: 4px solid var(--accent);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 22px;
+    }
+
+    .skill-line {
+      margin: 0;
+    }
+
+    .item {
+      margin-bottom: 18px;
+    }
+
+    .item-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 3px;
+      font-weight: 700;
+    }
+
+    .item-meta {
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 6px;
+    }
+
+    .project-link {
+      margin-top: 8px;
+    }
+
+    .compact-list li {
+      margin-bottom: 4px;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        padding: 24px 18px 36px;
+      }
+
+      h1 {
+        font-size: 31px;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .item-title {
+        display: block;
+      }
+    }
+
+    @media print {
+      body {
+        font-size: 12px;
+      }
+
+      .page {
+        max-width: none;
+        padding: 18px 22px;
+      }
+
+      section {
+        margin-top: 16px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 17px;
+      }
+
+      a {
+        color: var(--text);
+      }
     }
   </style>
 </head>
 <body>
+  <main class="page">
+    <header>
+      <h1>Kostiantyn Fridman</h1>
+      <p class="role">Junior Backend Developer</p>
+      <div class="contacts">
+        <span>Phone: <a href="tel:+380675621221">+380675621221</a></span>
+        <span>Email: <a href="mailto:konstantinfridman@proton.me">konstantinfridman@proton.me</a></span>
+        <span>GitHub: <a href="https://github.com/KonstantiniusBP" target="_blank">github.com/KonstantiniusBP</a></span>
+        <span>LinkedIn: <a href="https://www.linkedin.com/in/k-fridman/" target="_blank">linkedin.com/in/k-fridman</a></span>
+      </div>
+    </header>
 
-<header>
-  <h1>Kostiantyn Fridman</h1>
-  <p style="font-size: 1.1em; color: #555; letter-spacing: 0.2em; text-transform: uppercase;">Curriculum Vitae</p>
-</header>
+    <section id="summary">
+      <h2>Summary of Qualifications</h2>
+      <p class="summary">
+        Backend-oriented Web Developer with 3+ years of practical experience building web applications, REST API integrations, and client-facing solutions using JavaScript, TypeScript, Node.js, Python, and relational databases. Worked on backend and frontend features for web platforms, including API integration, database-related functionality, responsive interfaces, debugging, and deployment support. Focused on growing as a Node.js backend developer and writing clean, maintainable code for practical web products.
+      </p>
+    </section>
 
-<nav>
-  <a href="#education">Education</a>
-  <a href="#research">Research</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <p class="skill-line"><strong>Programming Languages:</strong> JavaScript, TypeScript, Python, SQL</p>
+        <p class="skill-line"><strong>Backend:</strong> Node.js, REST APIs, API Integration</p>
+        <p class="skill-line"><strong>Databases:</strong> SQL, Relational Databases</p>
+        <p class="skill-line"><strong>Frontend:</strong> Nuxt / Vue.js, Responsive Web Interfaces</p>
+        <p class="skill-line"><strong>Development Tools:</strong> Git, Docker, Insomnia, Figma</p>
+        <p class="skill-line"><strong>Methodologies:</strong> Agile, Scrum, Basic SDLC Understanding</p>
+        <p class="skill-line"><strong>Personal Qualities:</strong> Problem Solving, Responsibility, Fast Learning, Self-Organization</p>
+      </div>
+    </section>
 
-<section id="education">
-  <h2>Education</h2>
-  <ul>
-    <li><strong>BSc — Information Systems and Technologies | Dnipro University of Technology</strong><br>
-      <em>Graduation Date: 2022-2026</em><br>
-    </li>
-  </ul>
-</section>
+    <section id="experience">
+      <h2>Commercial Experience</h2>
 
-<section id="research">
-  <h2>Experience & Publications</h2>
-  
-  <h3>Publications & Preprints</h3>
-  <div class="publication">
-    <ul>
-      <li>
-        <strong>Comparative Analysis of Modern Components of Information Technology for Sound Processing on Robotic Systems</strong> <br>
-        Коротенко, Г., Фрідман, К. (2026) | <a href="https://www.sworldjournal.com/index.php/swj/article/view/swj35-01-083">Scientific World Journal</a>, 1(35-01), 174–185,  DOI: 10.30888/2663-5712 <br>
-        Abstract: The paper examines the current state and possibilities of processing information flows in modern robotic systems with artificial intelligence tools. Comparative characteristics of components of various systems and technologies are presented to assess the possibilities of their use in different conditions.
-      </li>
-    </ul>
-  </div>
+      <article class="item">
+        <div class="item-title">
+          <span>Freelance - Web Developer</span>
+          <span>2022 - Present</span>
+        </div>
+        <p class="item-meta">Web applications, landing pages, and client platforms</p>
+        <ul>
+          <li>Worked on web projects for clients, including landing pages, single-page applications, and platform features.</li>
+          <li>Developed frontend and backend functionality using JavaScript, TypeScript, Node.js, Python, Nuxt, and SQL.</li>
+          <li>Created and connected REST API functionality, forms, data processing, and database-driven features.</li>
+          <li>Participated in the full development cycle: requirements clarification, implementation, debugging, deployment support, and improvements based on feedback.</li>
+        </ul>
+      </article>
 
+      <article class="item">
+        <div class="item-title">
+          <span>Sangvinik - Web Developer & UI/UX Designer</span>
+          <span>2022</span>
+        </div>
+        <p class="item-meta">Official website for a Ukrainian fashion brand</p>
+        <ul>
+          <li>Designed the first official website for the brand, preparing UI/UX layouts in Figma and adapting the brand style for the web.</li>
+          <li>Developed responsive pages using Vue.js and worked with Node.js for backend and REST API integration tasks.</li>
+          <li>Helped prepare the website for the initial public launch and improved the brand's online presence.</li>
+        </ul>
+      </article>
+    </section>
 
-  <h3>Commercial Experience</h3>
-  <div class="publication">
-    <ul>
-      <li>
-        <strong>Sangvinik</strong><br>
-        <strong>Fullstack Developer & UI/UX Designer</strong> <em>2022</em><br>
-        Designed and launched the first official website for Ukrainian fashion brand Sangvinik at initial launch. Delivered full UI/UX layouts in Figma aligned with brand identity, 
-        developed a performant frontend using Vue.js with responsive design, and contributed to backend functionality using Node.js, primarily focused on REST API integration.
-      </li>
-      <li>
-        <strong>Freelance</strong><br>
-        <em>2022 - Present (3 years)</em><br>
-        Full-cycle web development across multiple client projects, including contributions to a browser-based accounting and management system and a volunteer-focused platform, as well as development of landing pages and single-page applications. 
-        Handled both frontend and backend responsibilities, delivering end-to-end solutions with a core stack of Python, JavaScript/TypeScript, Nuxt, and SQL.
-      </li>
+    <section id="projects">
+      <h2>Academic & Additional Projects</h2>
 
-    </ul>
-  </div>
-</section>
+      <article class="item">
+        <div class="item-title">
+          <span>Vehicle Tracking System</span>
+          <span>Computer Vision Course Final Project</span>
+        </div>
+        <p class="item-meta">Python, YOLOv8n, Ultralytics, Norfair, OpenCV, CVAT</p>
+        <ul>
+          <li>Created a course project for detecting and tracking vehicles on drone footage using a custom-annotated dataset.</li>
+          <li>Worked with dataset collection, data annotation, object detection, multi-object tracking, and real-time inference.</li>
+        </ul>
+        <p class="project-link">Link: <a href="https://github.com/KonstantiniusBP/opencv_project" target="_blank">github.com/KonstantiniusBP/opencv_project</a></p>
+      </article>
 
-<section id="projects">
-  <h2>Projects</h2>
+      <p>More projects: <a href="https://github.com/KonstantiniusBP" target="_blank">github.com/KonstantiniusBP</a></p>
+    </section>
 
-  <div class="project">
-    <strong>Vehicle Tracking System | Computer Vision Course Final Project</strong><br>
-    Real-time vehicle detection and tracking system using drone footage, trained on a custom-annotated dataset<br>
-    <em>Stack:</em> Python, YOLOv8n, Ultralytics, Norfair, OpenCV <br>
-    <em>Tech:</em> Object Detection, Multi-Object Tracking, Custom Dataset Collection, Data Annotation (CVAT), Real-Time Inference <br>
-    <em>Link:</em> <a href="https://github.com/KonstantiniusBP/opencv_project">github.com/KonstantiniusBP/opencv_project</a>
-  </div>
+    <section id="publications">
+      <h2>Publication</h2>
+      <article class="item">
+        <p>
+          <strong>Comparative Analysis of Modern Components of Information Technology for Sound Processing on Robotic Systems</strong>
+        </p>
+        <p class="item-meta">Korotenko, G., Fridman, K. | Scientific World Journal, 2026</p>
+        <p>
+          The paper examines the current state and possibilities of processing information flows in modern robotic systems with artificial intelligence tools. Comparative characteristics of components of various systems and technologies are presented to assess the possibilities of their use in different conditions.
+        </p>
+        <p>Link: <a href="https://www.sworldjournal.com/index.php/swj/article/view/swj35-01-083" target="_blank">Scientific World Journal</a></p>
+      </article>
+    </section>
 
-  <p><a href="https://github.com/KonstantiniusBP" class="cv-link">Other projects</a></p>
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="compact-list">
+        <li>
+          <strong>BSc - Information Systems and Technologies</strong><br>
+          Dnipro University of Technology<br>
+          Graduated in 2026
+        </li>
+      </ul>
+    </section>
 
-</section>
+    <section id="courses">
+      <h2>Courses & Certifications</h2>
+      <ul class="compact-list">
+        <li>
+          <strong>Computer Vision</strong>, RobotDreams.cc, 2024
+        </li>
+      </ul>
+    </section>
 
-<section id="certifications">
-  <h2>Certifications & Schools</h2>
-
-  <ul>
-    <li>
-      <strong>Computer Vision</strong> <br> 
-      RobotDreams.cc | Online, Ukraine
-    </li>
-  </ul>
-</section>
-
-<!-- <section id="awards">
-  <h2>Awards & Other Activities</h2>
-  <ul>
-    <li>...</li>
-  </ul>
-</section> -->
-
-<section id="contact">
-  <h2>Contact</h2>
-  <div style="display: flex;">
-    <div style="flex: 1;"> 
-      <p>Phone: <a href="tel:+380675621221">+380675621221</a></p>
-      <p>Email: <a href="mailto:konstantinfridman@proton.me">konstantinfridman@proton.me</a></p>
-      <p>GitHub: <a href="https://github.com/KonstantiniusBP" target="_blank">github.com/KonstantiniusBP</a></p>
-    </div>
-    <div style="flex: 1;">
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/k-fridman/" target="_blank">linkedin.com/in/k-fridman/</a></p>
-      <p>Google Scholar: <a href="https://scholar.google.com/citations?user=YgKir2EAAAAJ&hl=uk&oi=sra" target="_blank">Kostiantyn Fridman</a></p>
-    </div>
-  </div>
-</section>
-
-
+    <section id="languages">
+      <h2>Languages</h2>
+      <ul class="compact-list">
+        <li><strong>Ukrainian:</strong> Native</li>
+        <li><strong>English:</strong> B2 / Upper-Intermediate</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
